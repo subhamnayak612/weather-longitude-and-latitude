@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 🔹 BODY */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+}
+
+.section {
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Dark overlay for text readability */
+.overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+/* HOME GIF */
+.home-bg {
+    background-image: url("home.gif");
+}
+
+/* WEATHER GIF */
+.weather-bg {
+    background-image: url("weather.gif");
+}
+
+/* HELP GIF */
+.help-bg {
+    background-image: url("help.gif");
+}
+
+
+/* 🔹 NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* 🔹 HOME */
+.home {
+    min-height: 100vh;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home p {
+    margin: 15px 0 25px;
+    opacity: 0.9;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* 🔹 WEATHER SECTION */
+.weather-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 350px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-box button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #ffcc00;
+    cursor: pointer;
+}
+
+.weather-card {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-card img {
+    width: 80px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.details div {
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 12px;
+    width: 45%;
+}
+
+/* 🔹 HELP SECTION */
+.help {
+    min-height: 70vh;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.help-card {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 15px;
+}
+
+/* 🔹 FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.4);
+}

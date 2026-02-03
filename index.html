@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔹 NAVBAR -->
+<nav class="navbar">
+    <div class="logo">🌦 WeatherNow</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#weather">Temperature</a></li>
+        <li><a href="#help">Help</a></li>
+    </ul>
+</nav>
+<!-- 🔹 HOME SECTION -->
+<section id="home" class="section home-bg">
+    <div class="overlay">
+        <h1>Welcome to WeatherNow</h1>
+        <p>Get real-time weather updates for any city in the world.</p>
+        <a href="#weather" class="btn">Check Weather</a>
+    </div>
+</section>
+
+<!-- 🔹 WEATHER SECTION -->
+<section id="weather" class="section weather-bg">
+    <div class="overlay">
+        <div class="app">
+            <h1>🌡 Weather Checker</h1>
+            <p class="subtitle">Check today's weather instantly</p>
+
+            <div class="search-box">
+                <input type="text" id="locationInput" placeholder="Enter city name or lat,long">
+                <button onclick="getWeather()">Search</button>
+            </div>
+
+            <div class="weather-card" id="weatherCard">
+                <h2 id="city"></h2>
+                <img id="icon" alt="">
+                <h3 id="temp"></h3>
+                <p id="condition"></p>
+
+                <div class="details">
+                    <div>
+                        <span>Humidity</span>
+                        <p id="humidity"></p>
+                    </div>
+                    <div>
+                        <span>Wind</span>
+                        <p id="wind"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🔹 HELP SECTION -->
+<section id="help" class="section help-bg">
+    <div class="overlay">
+        <h2>Need Help?</h2>
+        <p>We are here for you 24/7</p>
+
+        <div class="help-card">
+            <p>📧 support@weathernow.com</p>
+            <p>📞 +91 98765 43210</p>
+            <p>🕘 9 AM – 6 PM</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- 🔹 HELP / QUERY SECTION -->
+<section id="help" class="help">
+    <h2>Need Help?</h2>
+    <p>If you face any issue, feel free to contact us.</p>
+
+    <div class="help-card">
+        <p>📧 Email: support@weathernow.com</p>
+        <p>📞 Helpline: +91 98765 43210</p>
+        <p>🕘 Available: 9 AM – 6 PM</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 WeatherNow | Designed by Subham</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
